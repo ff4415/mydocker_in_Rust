@@ -1,0 +1,23 @@
+[package]
+name = "mydocker"
+version = "0.0.1"
+authors = ["ff4415@163.com"]
+
+[workspace]
+
+members = []
+
+[dependencies]
+libc = "0.2.50"
+argparse = "0.2.1"
+log = "0.4.6"
+env_logger = "0.6.1"
+argparse = "0.2.2"
+# quick-error = "1.2.2"
+rand = "0.6.5"
+
+[features]
+default = ["containers"]
+containers = [
+    "unshare"
+]
